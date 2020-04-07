@@ -9,7 +9,6 @@ def alphabeta2(self, chessborad, alpha, beta, isMax, depth=3):
             i, j = empty_cells[index]
             tempChess[i][j] = 1 if isMax else 2
             if self.win(tempChess, 1 if isMax else 2):
-                print('reeeeeeeeeeeeeeeeeeeeee')
                 print(tempChess)
                 if isMax:
                     score = 10000
